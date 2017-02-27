@@ -1,10 +1,324 @@
----
-layout: default
-title: Hank Quinlan, Horrible Cop
----
-<div class="blurb">
-	<img  class="img-circle avatar" alt="winkler.jpg" src="winkler.png">
-	<i><font size="1"> <p align="center">Fons Heijnsbroek: 'No title, gouache no. 6.655' </p></font></i>
-	<h1>Hi there, I'm Hank Quinlan!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Les investissements de la mairie de Paris</title>
+  		<style type="text/css">a:link{text-decoration:none}</style>
+ 		
+    </head>
+
+
+		<style>
+		path {
+		  stroke:white;
+		  stroke-width: 1px;
+		}
+		.legend {
+		  font-size: 11px;
+		}
+		div.tooltip {   
+		  position: relative;
+		  top: -350px;
+		  left: 620px;                    
+		  width: 320px;                  
+		  height: 20px;                 
+		  padding: 2px;             
+		  font-size: 1em;     
+		  background-color: white;
+		  border: 1px;      
+		  border-radius: 8px;           
+		  pointer-events: none; 
+		  font-family: 'ralewayextralight', Arial, sans-serif;
+		  color: #44646f;        
+		} 
+		</style>
+
+
+    <body>
+    	 <div id="bloc_page">
+	        <header>
+	            
+		        <nav>
+		            <ul>
+		                <li><a class="scrollTo" href="#carte">C'est investi près de chez vous</a></li>
+		                <li><a class="scrollTo" href="#gagnant">Des gagnants et des perdants</a></li>
+		                <li><a class="scrollTo" href="#politique">Des dépenses politiques ? </a></li>
+		            </ul>
+		        </nav>
+	        </header>
+	        
+			<div id="banniere_image">
+                <div id="banniere_description">
+                   Les investissements 
+                </div>
+            </div>
+                     <p><center>Vous avez toujours rêvé de savoir quels trottoirs avaient été réparés près de chez vous ? <br>
+                      Combien coûte la réparation des toilettes de l'école d'à côté, ou la construction de la nouvelle piscine ? <br>
+                      Bienvenue sur notre page et dans le monde magique des finances municipales ! </center>
+                     </p>
+
+
+
+            	
+            		<hr />
+				<a class="scrollTo" href="#bloc_page"><h1 class="titre_section" id="carte">C'est investi près de chez vous</h1></a>
+				
+ 				 	
+            		<p> Où a-t-on investi depuis 2010 dans les rues de Paris ? Découvrez avec nous combien la mairie de Paris a consacré à l'éducation, au sport,
+aux espaces verts, au patrimoine... et où ! Avec notre carte, repérez les projets proches de vous, du plus anecdotique au plus conséquent, du plus baroque au plus banal. Jouez avec les filtres pour savoir qui sont les champions de la crèche ou des toits d'église percés !
+
+</p>
+
+
+                <h1 class="titre_subsection" style="margin-top:50px"> La géographie des investissements</h1>
+ 				<div class="carte">
+ 				<iframe src="index_layer.html" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width=100% height="600" style="margin-bottom:-100px"> </iframe>
+				</div>     
+                <p> Cette carte représente les investissements qui ont été votés par le conseil de paris dans les budgets primitifs des années 2015 et 2016. En cliquant sur les bulles vous pouvez avoir plus de détails : Pour la rénovation de l'espace de saut en longueur du Gymnase Didot 130 000 € ont été investis !</p>   
+
+                
+                
+				<h1 class="titre_subsection" style="margin-top:50px"> Les arrondissements à 2 chiffres investissent plus en valeur...</h1>
+				<div class="carte">
+					<iframe  src="montant_arro.htm"  frameBorder="0" align="center" width="900" height="500" style="margin-bottom:-100px"></iframe>
+				</div>
+                
+                <p>Globalement, les arrondissements les plus grands et les plus peuplés reçoivent plus de crédits d'investissements. Pour chaque arrondissement,
+                    la répartition des investissements entre les crèches, la culture, les écoles, l'environnement, le patrimoine, le sport et la voirie peut beaucoup varier.
+                    Cliquez sur les colonnes pour en voir le détail !  </p>
+				<h1 class="titre_subsection" style="margin-top:50px"> Mais les montants investis par tête favorisent le centre ! </h1>
+				<div class="carte">
+					<iframe  src="montant_arro_pop.htm" frameBorder="0" width="900" height="500" style="margin-bottom:-100px"></iframe>
+				</div>
+                <p>Pour ce deuxième graphique, nous avons divisé les montants investis entre 2010 et 2016 par la population de l'arrondissement en 2016. La hiérarchie
+                    des investissements en est nettement affectée : des petits arrondissements comme le 1er, le 3ème ou le 4ème s'imposent comme les chouchous de la mairie !  </p>
+		       
+ <h1 class="titre_subsection" style="margin-top:100px"> Le sport : premier poste d'investissements sur la période 2010 - 2016 </h1>
+
+   				 
+				<p> </p>
+
+				<div class="carte">
+				<iframe src="categorie.htm" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="900" height="500" style="margin-bottom:-100px"></iframe>
+				</div>  
+
+				<div>
+				<p> Les investissements localisés se concentrent principalement sur le sport qui représente 23% de ceux budgétés par la mairie de Paris ces 6 dernières années. Ceci est en partie lié au plan "Nager à Paris"  qui prévoit un investissement de 150 millions d'euros pour moderniser et créer de nouvelles piscines entre 2015 et 2020. Pour les années 2010-2016 les plus gros investissements sportifs concernent la construction ou la rénovation des équipements suivants : 
+			<ul>
+			  <li> Piscine du centre sportif Elisabeth dans le 14ème (19 M€) en 2016</li>
+			  <li> Piscine du centre Davout dans le 20ème (18,5 M€) en 2016 </li>
+			  <li> Gymnase du quartier Clichy-Batignolles dans le 17ème (14,9 M€) en 2013</li>
+			  
+			  			</ul>
+
+			 Les investissements relatifs aux espaces verts ne représentent quant à eux que 10 % des budgets prévus sur la période. </p>
+				</div> 
+
+               <h1 class="titre_subsection" style="margin-top:50px"> Ils ne font pas rêver, mais sont nécessaires </h1>
+                
+		        <div class="dangereux3">
+                <div class="logo"><img src="images/electricite_black.png" width="150" height="150" />  </div>
+
+					<p class="pchiffre"><span class="chiffre">13,5 M€</span> de travaux d'éléctricité</p> 
+		        		
+				</div>
+                <div class="dangereux3">
+
+
+		        	<div class="logo"><img src="images/securiteincendie_black.png" width="150" height="150" />  </div>
+
+					<p class="pchiffre"><span class="chiffre">17,9 M€</span> pour la sécurité incendie</p>
+		        	
+
+		          </div>
+				<div class="dangereux3">
+
+
+		        	<div class="logo"><img src="images/sanitaire_black.png" width="150" height="150" />  </div>
+
+					<p class="pchiffre"><span class="chiffre">18,8 M€</span> de sanitaires, toilettes, vestiaires</p>
+                    </p>
+		        	
+
+		        </div>
+
+		        <div class="dangereux3">
+                <div class="logo"><img src="images/chaussee_black.png" width="150" height="150" />  </div>
+
+					<p class="pchiffre"><span class="chiffre">26,5 M€</span> de travaux de trottoirs et chaussées</p>
+		        		
+				</div>
+                <div class="dangereux3">
+
+
+		        	<div class="logo"><img src="images/mairie_black.png" width="150" height="150" />  </div>
+
+					<p class="pchiffre"><span class="chiffre">34,4 M€</span> de travaux dans les mairies d'arrondissement</p> 
+		        	
+
+		          </div>
+				<div class="dangereux3">
+
+
+		        	<div class="logo"><img src="images/menuiserie_black.png" width="150" height="150" />  </div>
+
+					<p class="pchiffre"> <span class="chiffre">59,3 M€</span> de travaux de menuiseries</p> 
+                
+		        	
+
+		        </div>
+                <br style="clear: left;" />
+             
+               <p style="margin-top:30px"> Faire le budget d'une ville comme Paris, c'est aussi mettre des millions dans des toilettes, des trottoirs, des travaux 
+                de normes incendies... ou dans l'embellissement des mairies ! Entre 2010 et 2016, près de 186 millions d'euros ont ainsi été 
+                consacrés à ces 6 postes d'investissement. Cela représente près de 14 % des dépenses d'investissements 
+                localisés sur la période. </p>
+             
+
+                   <hr />
+		        <a class="scrollTo" href="#bloc_page"><h1 class="titre_section" id="gagnant">Des gagnants et des perdants</h1></a>
+
+		        <p>
+		        	La répartition des investissements localisés votés par la mairie de Paris est très disparate. 
+Quels arrondissements profitent le plus des dotations municipales ? Quels sont ceux qui disposent du moins de crédits ? 
+Différents critères entrent en jeu : la taille et la population d'un arrondissement sont importantes, mais les revenus des habitants sont également
+une clé de lecture essentielle.
+		        </p>
+
+            <h1 class="titre_subsection" style="margin-top:50px"> Moins d'investissements dans les arrondissements les plus riches </h1>
+
+            <div class="carte"> 
+		        <iframe src="index_redis.htm" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="900" height="500" style="margin-bottom:-100px"  > </iframe>		
+		     </div>
+       <p>Chaque point du graphique représente un arrondissement - en rouge s'il est à gauche, en bleu s'il est à droite. Plus l'arrondissement est situé à droite,
+           plus son revenu fiscal médian (au-dessus duquel se situe la moitié des ménages) est élevé ; plus il est à gauche, plus ce revenu est faible. Plus un point
+           est haut, plus il bénéficie d'investissements localisés ; plus il est bas, moins il en bénéficie. On voit assez clairement que les arrondissements les plus 
+           riches votent à droite et qu'ils touchent moins de dotations. </p>     
+
+            <h1 class="titre_subsection" style="margin-top:50px"> De grandes disparités de financements </h1>
+
+		        <div class="dangereux3">
+                <div class="logo"><img src="images/5et7_bis.png" width="300" height="160" />  </div>
+
+					<p class="pchiffre"> Le 5ème et le 7ème sont les moins dotés, 
+                    avec <span class="chiffre">285€</span> et <span class="chiffre">271€</span> <br/> 
+                    par habitant de 2010 à 2016</p> 
+		        		
+				</div>
+                <div class="dangereux3">
+
+
+		        	<div class="logo"><img src="images/18vs16.png" width="300" height="150" />  </div>
+
+					<p class="pchiffre"> Le 18ème arrondissement a touché <span class="chiffre">3 fois</span> plus par habitant <br/> que le 16ème</p>
+		        	
+
+		          </div>
+				<div class="dangereux3">
+
+
+		        	<div class="logo"><img src="images/4vslereste.png" width="300" height="200" />  </div>
+
+					<p class="pchiffre">On a autant investi dans le 4ème que dans le 8ème, 9ème, 10ème et 11ème
+                        <span class="chiffre">cumulés</span>
+                    </p>
+		        	
+
+		        </div>
+		
+<p>La géographie des investissements localisés dessine des fractures nettes entre les arrondissements parisiens.
+            Les arrondissements à deux chiffres sont en général mieux dotés, au moins pour ce qui concerne les montants absolus.
+            Mais entre eux, les écarts peuvent aussi être très nets, comme entre le 16ème et le 18ème arrondissements. 
+            Si certains arrondissements du centre de Paris arrivent en queue de classement, à l'image du 5ème et du 7ème, d'autres
+            tirent leur épingle du jeu, à l'image du 4ème arrondissement. </p>
+                <hr />
+				<a class="scrollTo" href="#bloc_page"><h1 class="titre_section" id="politique"> Des dépenses politiques ? </h1></a>
+
+				<p>
+					Les investissements votés au Conseil de Paris nous en apprennent beaucoup sur les rapports de force politique au sein de la capitale. 
+Plus que l'éternel clivage Rive gauche / Rive droite, ce qui compte c'est le bord politique ! Un déterminant important des sommes 
+investies est également le cycle électoral : on investit peu avant, et nettement plus après une élection. ​
+				</p>
+		        				
+
+		        <h1 class="titre_subsection" style="margin-top:50px">Gauche et droite, une question de rive ou d'urne ?</h1>
+                <h2 class="titre_subsubsection"> Avantage à la rive droite...</h2>
+				<div class="Histo">
+				<iframe  src="comp_rives.html" class="carte" frameBorder="0" align="center" width="900" height="500" style="margin-bottom:-100px"></iframe>
+				</div>
+						      	
+		      	<p> Entre 2010 et 2016, la rive droite a bénéficié de plus de 975 M€ d'investissements localisés, soit près de 2,7 fois plus que la rive gauche ! 
+                 Quand on tient compte des écarts de population, l'écart se réduit mais reste marqué : 640&nbsp€ par habitant rive droite vs. 500&nbsp€ rive gauche. 
+                 Le Forum des Halles, le stade Jean Bouin, l'aménagement de la zone Clichy-Batignolles, tous rive droite, ont contribué à ces différences.</p>
+		      	
+			
+				<h2 class="titre_subsubsection" style="margin-top:50px"> ... et aux arrondissements à gauche dans les urnes</h2>
+				<div class="Histo">
+		        <iframe  src="comp_urnes.html" class="carte" frameBorder="0" align="center" width="900" height="500" style="margin-bottom:-100px"></iframe>
+				</div>
+				 
+
+		        <p> Quand on considère la couleur politique plutôt que la rive, l'avantage revient à la gauche ! L'écart est d'ailleurs presqu'aussi important
+                 qu'entre les deux côtés de la Seine et il est encore plus fort par tête : presque 698&nbsp€ pour les électeurs de gauche,
+                 contre 428&nbsp€ pour les électeurs de droite. </p>
+    
+
+				
+				<h1 class="titre_subsection" style="margin-top:50px">Restrictions avant les élections, largesses après </h1>
+				<iframe  src="CyclePol.html" class="carte" frameBorder="0" align="center" width="800" height="500" style="margin-bottom:-100px"></iframe>
+				
+				<p> Quand on considère l'évolution entre 2010 et 2016 des investissements localisés à Paris, un contraste apparaît entre les années 2010, 2011, 2015, 2016, d'une part, et 2012, 2013 et 2014, d'autre part. Autrement dit, entre les périodes juste après des élections et celles juste avant. Le Conseil de Paris ne ménagerait-il pas le portefeuille de ses administrés avant qu'ils ne votent ? </p>​
+				
+	  	        <footer>
+	            <div class="bloc_final" style="margin-top:100px">
+
+	                <div class="tweet">
+	                    <h1 style ="text-align: center">Sources</h1>
+	                    <ul>
+	                        <li> Données des <a id="lien" href="http://www.paris.fr/budget">budgets primitifs</a> de la mairie de Paris</li>
+	                        <li> Données Insee de rencencement 2016 pour la population </li>
+	                        <li> Données Insee sur les niveaux de richesse par arrondissement</li> <br>
+	                         <a id="lien-bouton" href="http://budgetprimitif2016.paris.fr/#/"> Budget 2016</a> <br>
+	                    </ul>
+	                </div>
+	                <div class="tweet">
+	                	<h1 style ="text-align: center">Nous contacter</h1>
+	                    <ul style ="text-align: justify">
+	                        Ce site a été réalisé par Sophie Maillard, Clémence Lenoir et Milena Suarez, toutes trois élèves en dernière année de l'ENSAE Paristech, dans le cadre d'un projet de DataViz. Pour nous écrire:<br><strong>parisinvestit@gmail.com </strong> <br>
+	        			<br>
+	                    </u1>
+	                    <u1 style="text-align: center">
+	                     <img src="images/ENSAE.png" width="200" height="80"/> 
+	                    </u1>
+	                </div>
+
+	                <div class="tweet">
+	                	<h1 style ="text-align: center">Investissements localisés</h1>
+	                    <ul style ="text-align: justify">
+	                        Il s’agit des investissements dont l’<strong>intérêt local</strong> est <strong>avéré</strong> et pouvant, de ce fait, être rattachés à un arrondissement en particulier. Nous avons travaillé sur "les principales opérations d'investissement" telles que publiées par la mairie de Paris, dans les annexes II des budgets primitifs.<br>
+	        			<br>
+	                    </u1>
+	                    <u1 style="text-align: center">
+	                     <a id="lien-bouton" href="http://budgetprimitif2016.paris.fr/pdf/2016/ville/annexes/Investissement_localise_Ville.pdf"> Annexe II au budget 2016</a>
+	                    </u1>
+	                </div>
+	            </div>
+            </footer>
+
+ 		</div>
+
+    </body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-75648723-1', 'auto');
+  ga('send', 'pageview');
+</script>​
+<META NAME="description" CONTENT="Dataviz des investissements locaux de la mairie de Paris">
+ 
+<META NAME="keywords" CONTENT="dataviz, investissements, investissements localisés, mairie de Paris, Paris, géographie investissement"> 
+</html>
